@@ -1,10 +1,11 @@
-import { Box, Card, Typography } from "@mui/material";
-import { BoxProps } from "@mui/system";
-import { Property } from "../../types/Property";
-import Flex from "../Flex/Flex";
+import React from 'react';
+import { Box, Card, Typography } from '@mui/material';
+import { BoxProps } from '@mui/system';
+import { Property } from '../../types/Property';
+import Flex from '../Flex/Flex';
 
 const placeholderImgSrc =
-  "https://via.placeholder.com/560x240?text=placeholder";
+  'https://via.placeholder.com/560x240?text=placeholder';
 
 interface Props {
   property: Property;
@@ -13,21 +14,34 @@ interface Props {
 const PropertyCard = (props: Props) => {
   const { property } = props;
   return (
-    <Box my={2} boxShadow={1} borderRadius={2} overflow="hidden">
+    <Box
+      key={property.id}
+      my={2}
+      boxShadow={1}
+      borderRadius={2}
+      overflow="hidden"
+      data-testid="PROPERTY_CARD"
+    >
       <Flex
         height="36px"
         justifyContent="space-between"
-        bgcolor={property.agency.brandingColors.primary}
+        bgcolor={property.agency?.brandingColors?.primary}
         p={1}
       >
         <Box>
-          <img height="100%" width="100%" src={property.agency.logo} />
+          <img
+            height="100%"
+            width="100%"
+            alt="logo"
+            src={property.agency?.logo}
+          />
         </Box>
       </Flex>
       <Box height="360px">
         <img
           height="100%"
           width="100%"
+          alt="main"
           src={property.mainImage || placeholderImgSrc}
         />
       </Box>
