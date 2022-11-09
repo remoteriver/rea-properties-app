@@ -31,21 +31,25 @@ const PropertiesView = (props: Props) => {
       <Box flex={1} px={1}>
         <Typography variant="h5">Results</Typography>
         {results.map((property) => (
-          <PropertyCard
-            property={property}
-            mode="add"
-            onButtonClicked={handleAddPropertyToSaved}
-          />
+          <Box key={property.id}>
+            <PropertyCard
+              property={property}
+              mode="add"
+              onButtonClicked={handleAddPropertyToSaved}
+            />
+          </Box>
         ))}
       </Box>
       <Box flex={1} px={1}>
         <Typography variant="h5">Saved Properties</Typography>
         {saved.map((property) => (
-          <PropertyCard
-            property={property}
-            mode="remove"
-            onButtonClicked={handleRemovePropertyFromSaved}
-          />
+          <Box key={property.id}>
+            <PropertyCard
+              property={property}
+              mode="remove"
+              onButtonClicked={handleRemovePropertyFromSaved}
+            />
+          </Box>
         ))}
       </Box>
     </Flex>

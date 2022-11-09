@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Box, Button, Card, Typography } from '@mui/material';
-import { BoxProps } from '@mui/system';
+import { useState } from 'react';
+import { Box, Button, Typography } from '@mui/material';
 import { Property } from '../../types/Property';
 import Flex from '../Flex';
 
@@ -27,7 +26,6 @@ const PropertyCard = (props: Props) => {
 
   return (
     <Box
-      key={property.id}
       my={2}
       boxShadow={1}
       borderRadius={2}

@@ -1,5 +1,5 @@
-
 ## Main Features
+
 - Display list of properties from the backend data
 - Add/Remove properties from the lists
 
@@ -11,18 +11,18 @@ git clone https://github.com/remoteriver/rea-properties-app
 
 ## Install & Start
 
-nodejs, yarn are required to run the project
+nodejs, yarn/npm are required to run the project
 
 1. Install packages:
 
 ```shell
-yarn
+yarn/npm install
 ```
 
 2. Start the APP
 
 ```shell
-yarn start
+yarn start/npm start
 ```
 
 3. Check http://localhost:3000 in browser
@@ -30,5 +30,5 @@ yarn start
 ## Test
 
 ```shell
-yarn test
+yarn test/npm test
 ```
