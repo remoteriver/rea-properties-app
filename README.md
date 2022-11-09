@@ -16,13 +16,19 @@ nodejs, yarn/npm are required to run the project
 1. Install packages:
 
 ```shell
-yarn/npm install
+yarn
+```
+```shell
+npm install
 ```
 
 2. Start the APP
 
 ```shell
-yarn start/npm start
+yarn start
+```
+```shell
+npm start
 ```
 
 3. Check http://localhost:3000 in browser
@@ -30,5 +36,8 @@ yarn start/npm start
 ## Test
 
 ```shell
-yarn test/npm test
+yarn test
+```
+```shell
+npm test
 ```
