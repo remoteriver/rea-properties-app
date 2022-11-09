@@ -1,10 +1,11 @@
 import { Container } from '@mui/material';
-import PropertiesView from './components/PropertiesView/PropertiesView';
+import data from 'data/data.json';
+import PropertiesView from './components/PropertiesView';
 
 const Homepage = () => {
   return (
     <Container>
-      <PropertiesView />
+      <PropertiesView data={data} />
     </Container>
   );
 };
