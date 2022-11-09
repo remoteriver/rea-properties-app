@@ -22,7 +22,7 @@ describe('PropertiesView', () => {
           results: [],
           saved: [],
         }}
-      />
+      />,
     );
 
     expect(screen.getByText('Saved Properties')).toBeInTheDocument();
@@ -43,7 +43,7 @@ describe('PropertiesView', () => {
           results: [],
           saved: [mockProperty],
         }}
-      />
+      />,
     );
 
     expect(PropertyCard).toBeCalledWith(
@@ -52,7 +52,7 @@ describe('PropertiesView', () => {
         property: mockProperty,
         onButtonClicked: expect.any(Function),
       },
-      expect.anything()
+      expect.anything(),
     );
     expect(screen.getAllByText('PropertyCard').length).toBe(1);
   });
@@ -71,7 +71,7 @@ describe('PropertiesView', () => {
           results: [mockProperty],
           saved: [],
         }}
-      />
+      />,
     );
 
     expect(PropertyCard).toBeCalledWith(
@@ -80,7 +80,7 @@ describe('PropertiesView', () => {
         property: mockProperty,
         onButtonClicked: expect.any(Function),
       },
-      expect.anything()
+      expect.anything(),
     );
     expect(screen.getAllByText('PropertyCard').length).toBe(1);
   });

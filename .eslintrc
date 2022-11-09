@@ -19,7 +19,7 @@
       "no-prototype-builtins": ["off"],
       "sort-keys": ["off"],
       "space-before-function-paren": ["off"],
-      "indent": ["off"],
+      "indent": ["off"]
     },
     "env": {
       "browser": true,

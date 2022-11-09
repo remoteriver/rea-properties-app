@@ -6,6 +6,6 @@ describe('Flex', () => {
     render(<Flex>flex</Flex>);
 
     expect(screen.getByText('flex')).toBeInTheDocument();
-    expect(screen.getByText('flex')).toHaveStyle({ 'display': 'flex' });
+    expect(screen.getByText('flex')).toHaveStyle({ display: 'flex' });
   });
 });

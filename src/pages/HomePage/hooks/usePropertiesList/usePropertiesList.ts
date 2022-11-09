@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Property } from '../../../../types/Property';
 
 const usePropertiesList = (
-  initState: Property[] = []
+  initState: Property[] = [],
 ): [Property[], (property: Property) => void, (id: string) => void] => {
   const [properties, setProperties] = useState(initState);
 

@@ -1,4 +1,4 @@
-import { Agency } from "./Agency";
+import { Agency } from './Agency';
 
 export interface Property{
     price: string;

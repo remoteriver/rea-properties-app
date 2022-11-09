@@ -85,7 +85,7 @@ describe('PropertyCard', () => {
           property={mockProperty}
           mode="remove"
           onButtonClicked={mockHandler}
-        />
+        />,
       );
 
       fireEvent.mouseOver(screen.getByTestId('PROPERTY_CARD'));
