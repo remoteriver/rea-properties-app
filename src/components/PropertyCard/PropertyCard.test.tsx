@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import PropertyCard from './PropertyCard';
-import { Property } from '../../types/Property';
+import { Property } from 'types/Property';
 
 describe('PropertyCard', () => {
   describe('with empty property', () => {
@@ -9,7 +9,7 @@ describe('PropertyCard', () => {
       price: 'price',
       agency: undefined,
       id: '',
-      mainImage: ''
+      mainImage: '',
     };
 
     test('it renders', () => {
@@ -24,7 +24,7 @@ describe('PropertyCard', () => {
       expect(screen.getByTestId('PROPERTY_CARD')).toHaveStyle({
         'box-shadow':
           '0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)',
-        'border-radius': '8px'
+        'border-radius': '8px',
       });
     });
   });
@@ -35,11 +35,11 @@ describe('PropertyCard', () => {
       agency: {
         logo: 'logo_src',
         brandingColors: {
-          primary: 'yellow'
-        }
+          primary: 'yellow',
+        },
       },
       id: '1',
-      mainImage: 'main_src'
+      mainImage: 'main_src',
     };
 
     test('it renders logo', () => {

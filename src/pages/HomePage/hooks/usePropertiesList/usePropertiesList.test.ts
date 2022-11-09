@@ -1,4 +1,3 @@
-import React from 'react';
 import { act, render, renderHook, screen } from '@testing-library/react';
 import usePropertiesList from './usePropertiesList';
 
@@ -9,8 +8,8 @@ describe('usePropertiesList', () => {
         price: 'price',
         agency: undefined,
         id: '',
-        mainImage: ''
-      }
+        mainImage: '',
+      },
     ];
 
     const { result } = renderHook(() => usePropertiesList(mockInitState));
@@ -23,7 +22,7 @@ describe('usePropertiesList', () => {
       price: 'price',
       agency: undefined,
       id: '1',
-      mainImage: ''
+      mainImage: '',
     };
     const { result } = renderHook(() => usePropertiesList());
 
@@ -44,14 +43,14 @@ describe('usePropertiesList', () => {
         price: 'price',
         agency: undefined,
         id: '1',
-        mainImage: ''
+        mainImage: '',
       },
       {
         price: 'price',
         agency: undefined,
         id: '2',
-        mainImage: ''
-      }
+        mainImage: '',
+      },
     ];
 
     const { result } = renderHook(() => usePropertiesList(mockInitState));
@@ -73,14 +72,14 @@ describe('usePropertiesList', () => {
         price: 'price',
         agency: undefined,
         id: '1',
-        mainImage: ''
+        mainImage: '',
       },
       {
         price: 'price',
         agency: undefined,
         id: '2',
-        mainImage: ''
-      }
+        mainImage: '',
+      },
     ];
 
     const { result } = renderHook(() => usePropertiesList(mockInitState));
