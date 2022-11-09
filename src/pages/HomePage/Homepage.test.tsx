@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import PropertiesView from './components/PropertiesView';
-import { Homepage } from './';
+import Homepage from './';
 
 jest.mock('./components/PropertiesView', () => jest.fn());
 describe('HomePage', () => {

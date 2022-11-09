@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Box, Button, Card, Typography } from '@mui/material';
 import { BoxProps } from '@mui/system';
 import { Property } from '../../types/Property';
-import Flex from '../Flex/Flex';
+import Flex from '../Flex';
 
 const placeholderImgSrc =
   'https://via.placeholder.com/560x240?text=placeholder';
